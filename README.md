@@ -5,6 +5,7 @@ This is a ML based project to identify vital information from given images of pa
 This collab notebook takes in the paths of images of different patient monitors, and outputs the values shown on the monitor, which are HR, SPO2, RR, SBP, DBP and MAP respectively. This notebook is made as a solution of the inter-IIT 2023 Problem Statement 6 - The Vital Extraction Challenge (By CloudPhysician)
 
 # How to run
+First open the notebook in google collab.Then add the image path of the desired image in the inference function.
 For the first time run, run the first block of 'Installing Necessities, Importing essential Libraries and models - '. It will load all the necessities into the memory, to be read for the inference function. This block needs to be run only once, and it will take 20-30 seconds to run.
 
 Also run all the blocks below the first block inorder to define the necessary functions.
