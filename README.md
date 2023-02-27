@@ -1,9 +1,10 @@
 # CloudPhysician-Identifying-Vitals-
 This is a ML based project to identify vital information from given images of patient monitors. It identifies information like ECG value,SPO2,RR,BP along with the ECG graph.  
-Introduction
+
+# Introduction
 This collab notebook takes in the paths of images of different patient monitors, and outputs the values shown on the monitor, which are HR, SPO2, RR, SBP, DBP and MAP respectively. This notebook is made as a solution of the inter-IIT 2023 Problem Statement 6 - The Vital Extraction Challenge (By CloudPhysician)
 
-How to run
+# How to run
 For the first time run, run the first block of 'Installing Necessities, Importing essential Libraries and models - '. It will load all the necessities into the memory, to be read for the inference function. This block needs to be run only once, and it will take 20-30 seconds to run.
 
 Also run all the blocks below the first block inorder to define the necessary functions.
@@ -12,7 +13,7 @@ Note - The SegmentationModel.h5 file present in the zip file should also be pres
 
 To run the functions, Run the inference function in the Final Function block.
 
-Pipeline
+# Pipeline
 Our Team divided the task into 2 subtasks -
 
 Finding the monitor in the image and cropping it.
@@ -39,7 +40,8 @@ Our second attempt to find the BP is by looking for keywords like 'sys', '5y5', 
 We find Map by looking for '(' or ')' and then if we got it we will take the numbers after '(' or before')'.If not found then we look for the keyword 'map' and find the bounding box nearest to it
 The last attempt to find out the BP and MAP is by looking for three numbers having closest distance and within distances within a threshold and then trying to find the SBP,DBP and MAPs
 After all that, we are simply arranging it all in a dictionary and outputting it.
-Libraries used -
+
+# Libraries used -
 Tensorflow (for running keras models)
 OpenCV (for image processing)
 PaddleOCR (for OCR functionality)
